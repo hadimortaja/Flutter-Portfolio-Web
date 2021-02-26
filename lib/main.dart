@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app_web/Drawer/drawer_view.dart';
 import 'package:portfolio_app_web/Header/header_view.dart';
+import 'package:portfolio_app_web/navigation_bar/navigation_bar_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,10 +29,12 @@ class PortfolioView extends StatelessWidget {
     //print(width);
     print(height);
     return Scaffold(
+      endDrawer: DrawerView(),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
+            NavigationBarView(),
             HeaderView(height: height),
             Container(
               height: height,
