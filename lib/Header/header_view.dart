@@ -14,6 +14,10 @@ class HeaderView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final isSmall = width < 950;
+    final imageWidth = width * 0.47;
+
     return ResponsiveBuilder(
       builder: (_, size) {
         if (size.isMobile) return HeaderMobileView();
@@ -29,10 +33,10 @@ class HeaderView extends StatelessWidget {
                   child: HeaderBody(),
                 ),
                 Image.asset(
-                  'assets/images/mobile.png',
+                  'assets/images/header.png',
                   scale: 1,
-                  height: 400,
-                  width: 300,
+                  height: isSmall ? imageWidth : 500,
+                  width: 400,
                 )
               ],
             ),
@@ -56,13 +60,15 @@ class HeaderMobileView extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 65),
       child: Column(
         children: [
-          Image.asset(
-            'assets/images/mobile.png',
-            scale: 1,
-            height: height * 0.3,
+          Expanded(
+            child: Image.asset(
+              'assets/images/header.png',
+              scale: 1,
+              height: height * 0.3,
+            ),
           ),
           HeaderBody(
             isMobile: true,

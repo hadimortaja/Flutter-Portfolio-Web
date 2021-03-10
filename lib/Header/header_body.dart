@@ -35,11 +35,11 @@ class HeaderBody extends StatelessWidget {
         AutoSizeText(
           'I have 2 years of experiance in Mobile Development in building beautiful apps in Android And Ios.',
           style: TextStyle(fontSize: 18),
-          maxFontSize: 18,
-          maxLines: 3,
+          maxFontSize: 20,
+          maxLines: 5,
         ),
         SizedBox(
-          height: 40,
+          height: 30,
         ),
         FlatButton(
           shape: RoundedRectangleBorder(
