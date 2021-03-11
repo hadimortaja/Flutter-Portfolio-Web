@@ -21,7 +21,7 @@ class NavigationBarView extends StatelessWidget {
                     'assets/images/logo.png',
                   ),
                 ),
-                Spacer(),
+                //Spacer(),
                 IconButton(
                     icon: Icon(Icons.menu),
                     onPressed: () => Scaffold.of(context).openEndDrawer())
