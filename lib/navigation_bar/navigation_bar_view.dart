@@ -16,12 +16,8 @@ class NavigationBarView extends StatelessWidget {
                 SizedBox(
                   width: 20,
                 ),
-                Container(
-                  child: Image.asset(
-                    'assets/images/logo.png',
-                  ),
-                ),
-                //Spacer(),
+                FlutterLogo(),
+                Spacer(),
                 IconButton(
                     icon: Icon(Icons.menu),
                     onPressed: () => Scaffold.of(context).openEndDrawer())
@@ -37,11 +33,7 @@ class NavigationBarView extends StatelessWidget {
           width: 1092.8,
           child: Row(
             children: [
-              Container(
-                child: Image.asset(
-                  'assets/images/logo.png',
-                ),
-              ),
+              FlutterLogo(),
               Spacer(),
               for (var item in kNavigationItems)
                 NavigtonBarItem(onPressed: onPressed, text: item.text),

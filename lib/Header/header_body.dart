@@ -19,13 +19,14 @@ class HeaderBody extends StatelessWidget {
       children: [
         AutoSizeText(
           'I\'m a Mobile',
-          style: GoogleFonts.montserrat(fontSize: 35),
+          style: Theme.of(context).textTheme.headline4,
           maxLines: 1,
           maxFontSize: 35,
         ),
         AutoSizeText(
           'Developer < / >',
-          style: GoogleFonts.montserrat(fontSize: 35),
+          style: Theme.of(context).textTheme.headline4,
+          // GoogleFonts.montserrat(fontSize: 35)
           maxLines: 1,
           maxFontSize: 35,
         ),

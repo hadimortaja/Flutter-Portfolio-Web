@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app_web/Header/header_body.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:portfolio_app_web/constants.dart';
 
 class HeaderView extends StatelessWidget {
   const HeaderView({
@@ -24,7 +25,7 @@ class HeaderView extends StatelessWidget {
         return Container(
           color: Colors.white,
           height: height,
-          width: 1092.8,
+          width: KInitWidth,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
