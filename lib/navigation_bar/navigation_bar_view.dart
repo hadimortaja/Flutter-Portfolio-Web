@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_app_web/navigation_bar/navigation_item.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../constants.dart';
+
 class NavigationBarView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class NavigationBarView extends StatelessWidget {
         var onPressed = () => print('Clicked');
 
         return Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: KScreenPadding,
           height: 80,
           width: 1092.8,
           child: Row(

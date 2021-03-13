@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app_web/Header/header_body.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:portfolio_app_web/constants.dart';
 
 class HeaderView extends StatelessWidget {
@@ -27,7 +25,7 @@ class HeaderView extends StatelessWidget {
           height: height,
           width: KInitWidth,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: KScreenPadding,
             child: Row(
               children: [
                 Expanded(

@@ -1,6 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app_web/utils/hover_extensions.dart';
 
 class HeaderBody extends StatelessWidget {
@@ -42,6 +41,7 @@ class HeaderBody extends StatelessWidget {
         SizedBox(
           height: 30,
         ),
+        // ignore: deprecated_member_use
         FlatButton(
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(7))),
