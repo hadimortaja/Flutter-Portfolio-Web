@@ -56,7 +56,7 @@ class HeaderBody extends StatelessWidget {
                 fontSize: isMobile ?? false ? 16 : 24, color: Colors.white),
             maxLines: 1,
           ),
-        ).showCursorOnHover,
+        )//.showCursorOnHover,
       ],
     );
   }
